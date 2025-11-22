@@ -5,6 +5,15 @@ export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig()
   const kontentConfig = config.public?.kontent || config.kontent
 
+  if (!kontentConfig || !kontentConfig.environmentId) {
+    console.error('Kontent configuration is missing. Please set KONTENT_ENVIRONMENT_ID environment variable.')
+    return {
+      provide: {
+        kontent: null
+      }
+    }
+  }
+
   const deliveryClient = new DeliveryClient({
     projectId: kontentConfig.environmentId,
     previewApiKey: kontentConfig.previewApiKey,

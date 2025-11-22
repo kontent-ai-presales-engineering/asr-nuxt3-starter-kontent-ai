@@ -11,6 +11,18 @@ export default defineNuxtConfig({
             }
         }
     },
+    build: {
+        transpile: ['@kentico/kontent-delivery', '@kentico/kontent-core']
+    },
+    vite: {
+        optimizeDeps: {
+            exclude: ['@kentico/kontent-delivery', '@kentico/kontent-core'],
+            include: []
+        },
+        ssr: {
+            noExternal: ['@kentico/kontent-delivery', '@kentico/kontent-core']
+        }
+    },
     app: {
         head: {
             link: [{

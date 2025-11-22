@@ -20,9 +20,17 @@ import { useNuxtApp } from '#app'
 
 export default {
     async setup() {
-        const kontent = useNuxtApp().$kontent
+        const nuxtApp = useNuxtApp()
+        const kontent = nuxtApp.$kontent
+        
+        if (!kontent) {
+            console.error('Kontent client is not available')
+            return {
+                articles: []
+            }
+        }
+        
         const store = useArticle();
-
         await store.getData(kontent);
         const { topThree } = storeToRefs(store)
         
