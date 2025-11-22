@@ -8,15 +8,15 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "@kentico/kontent-delivery": "^11.13.0",
-    "@kentico/kontent-model-generator": "5.0.0-3",
-    "@types/luxon": "^3.4.2",
-    "nuxt": "^3.14.159",
-    "sass": "^1.80.7",
-    "scule": "^1.3.0"
+    "@kentico/kontent-delivery": "^11.0.0-5",
+    "@kentico/kontent-model-generator": "4.0.0-7",
+    "kontent-nuxt3-module": "^1.0.0-release",
+    "@types/luxon": "^2.0.5",
+    "nuxt3": "latest",
+    "sass": "^1.43.2"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.5",
-    "pinia": "^2.2.6"
+    "@pinia/nuxt": "^0.0.7",
+    "pinia": "^2.0.0-rc.14"
   }
 }

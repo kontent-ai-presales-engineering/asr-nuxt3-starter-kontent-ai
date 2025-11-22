@@ -38,27 +38,28 @@ export default {
 @import "../assets/scss/mixins";
 
 .menu {
-    @include margin-bottom(1);
+    margin-bottom: 30px;
     &__list {
         list-style: none;
         padding: 0;
         margin: 0;
         &-item {
             padding: 0;
-            margin: 10px 0;
+            margin: 0;
             &-link {
-                font-size: $typographic-base-font-size;
-                color: $typographic-base-font-color;
-                font-weight: 400;
-                border: 0;
+                display: block;
+                padding: 12px 0;
+                font-size: 14px;
+                color: #333;
+                font-weight: 500;
+                text-decoration: none;
+                transition: color 0.2s;
                 &:hover,
                 &:focus {
-                    color: $color-primary;
-                    border-bottom: 1px solid $color-primary;
+                    color: #ff6b35;
                 }
                 &--active {
-                    color: $color-base;
-                    border-bottom: 1px solid $color-base;
+                    color: #ff6b35;
                 }
             }
         }

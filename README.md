@@ -8,17 +8,15 @@
 
 Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 
-**Warning: Nuxt 3 is in beta and is not meant to be used on production. The implementation is still unstable.**
-
 ![Page Screenshot](https://i.imgur.com/jVImqT2.jpg)
 
 ## Features
-+ Nuxt 3 as a static site generator
++ Nuxt 3.20+ as a static site generator
 + TypeScript
-+ Content from [Kontent](http://kontent.ai/) headless CMS.
-+ [Kontent Delivery JS SDK (^11.0.0)](https://github.com/Kentico/kontent-delivery-sdk-js/tree/vnext) via [Kontent Nuxt3 module](https://github.com/kontent-ai-presales-engineering/asr-nuxt3-starter-kontent-ai?tab=readme-ov-file)
-+ [Kontent Model generator (^4.0.0)](https://github.com/Kentico/kontent-model-generator-js) to automatically generate content types into strongly typed models.
-+ Uses [Pinia](https://pinia.esm.dev/) as a data store.
++ Content from [Kontent.ai](http://kontent.ai/) headless CMS.
++ [Kontent Delivery JS SDK (^11.13.0)](https://github.com/Kentico/kontent-delivery-sdk-js) via custom Nuxt plugin
++ [Kontent Model generator (5.0.0)](https://github.com/Kentico/kontent-model-generator-js) to automatically generate content types into strongly typed models.
++ Uses [Pinia (^2.2.6)](https://pinia.vuejs.org/) as a data store.
 + [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
 + Stylesheet built using SASS and [BEM](http://getbem.com/naming/)-Style naming.
 + Sidebar menu built using a configuration block.
@@ -28,7 +26,7 @@ Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 
 ### Requirements
 
-+ [Node.js](https://nodejs.org/)
++ [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
 
 ### Create codebase
 
@@ -53,7 +51,7 @@ Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 
 ### Join codebase and content data
 
-Copy [`.env.template`](`./.env.template`) and name it `.env` then set the `KONTENT_PROJECT_ID` environment variable to value from Kontent -> "Project Settings" ->  API keys -> Project ID.
+Copy [`.env.template`](`./.env.template`) and name it `.env` then set the `KONTENT_ENVIRONMENT_ID` environment variable to value from Kontent -> "Project Settings" ->  API keys -> Project ID.
 
 **You are now ready to use the site as your own!**
 
@@ -62,7 +60,8 @@ Copy [`.env.template`](`./.env.template`) and name it `.env` then set the `KONTE
 Install the dependencies and run development environment
 
 ```sh
-npm install  
+cd src
+npm install
 npm run dev
 ```
 
@@ -71,44 +70,58 @@ npm run dev
 Install the dependencies and run production build
 
 ```sh
+cd src
 npm install
 npm run build
 npm run start
 ```
 
-## Fully static site
+## Static site generation
 
-According to [the page in Nuxt 3 docs](https://v3.nuxtjs.org/getting-started/introduction#comparison), the full static mode is not yet supported. The command `nuxt generate` does not currently work.
+Generate a fully static site:
+
+```sh
+cd src
+npm run generate
+```
 
 ## Using Kontent plugin in Nuxt 3
 
-This implementation uses [the new JS Delivery SDK for Kontent](https://github.com/Kentico/kontent-delivery-sdk-js/tree/vnext). The deliveryClient is registered via Nuxt 3 plugin and accessible to all pages and components via app context:
+This implementation uses the [Kontent Delivery JS SDK](https://github.com/Kentico/kontent-delivery-sdk-js). The deliveryClient is registered via a custom Nuxt 3 plugin ([src/plugins/kontent.ts](src/plugins/kontent.ts)) and is accessible to all pages and components via app context:
 
 ```js
 const kontent = useNuxtApp().$kontent
 ```
 
-See the configuration details on the [Kontent Nuxt3 module page](https://github.com/kontent-ai-presales-engineering/asr-nuxt3-starter-kontent-ai?tab=readme-ov-file).
+The plugin configuration is defined in [nuxt.config.ts](src/nuxt.config.ts) using runtime config:
+
+```ts
+runtimeConfig: {
+  public: {
+    kontent: {
+      environmentId: process.env.KONTENT_ENVIRONMENT_ID,
+      previewApiKey: process.env.KONTENT_PREVIEW_KEY,
+    }
+  }
+}
+```
 
 ### Preview Deploy
 
-To allow this example load unpublished content via  [Preview Delivery API](https://docs.kontent.ai/reference/delivery-api#section/Production-vs.-Preview), you need to adjust `.env` file created in ["Join codebase to content data"](#Join-codebase-and-content-data) section by setting the following environment variable:
+To allow this example to load unpublished content via [Preview Delivery API](https://docs.kontent.ai/reference/delivery-api#section/Production-vs.-Preview), you need to adjust the `.env` file created in the ["Join codebase to content data"](#Join-codebase-and-content-data) section by setting the following environment variable:
 
-`KONTENT_PREVIEW_KEY=<PREVIEW_API_KEY>` by passing the [Preview authentication key](https://docs.kontent.ai/reference/delivery-api#section/Authentication)
+`KONTENT_PREVIEW_KEY=<PREVIEW_API_KEY>` with your [Preview authentication key](https://docs.kontent.ai/reference/delivery-api#section/Authentication)
 
-You also need to adjust the `nuxt.config.ts` which holds the configuration for the `deliveryClient`:
+The custom Nuxt plugin at [src/plugins/kontent.ts](src/plugins/kontent.ts) automatically enables preview mode when the `KONTENT_PREVIEW_KEY` is set:
 
-```js
-...
-publicRuntimeConfig: {
-  kontent: {
-    projectId: process.env.KONTENT_PROJECT_ID,
-    previewApiKey: process.env.KONTENT_PREVIEW_KEY,
-    defaultQueryConfig: {
-      usePreviewMode: true
-  }
-}
-...
+```ts
+const deliveryClient = new DeliveryClient({
+  projectId: kontentConfig.environmentId,
+  previewApiKey: kontentConfig.previewApiKey,
+  defaultQueryConfig: {
+    usePreviewMode: !!kontentConfig.previewApiKey,
+  },
+})
 ```
 
 #### Preview URLs

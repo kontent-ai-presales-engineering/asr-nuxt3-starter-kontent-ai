@@ -57,9 +57,9 @@
 </template>
 
 <script lang="ts">
-  export default ({
+export default {
     props: ["data", "author", "metadata"]
-  });
+}
 </script>
 
 <style lang="scss">

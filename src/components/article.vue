@@ -35,9 +35,9 @@
 </template>
 
 <script lang="ts">
-export default ({
-    props: ["data"],
-});
+export default {
+    props: ["data"]
+}
 </script>
 
 <style lang="scss">
@@ -45,59 +45,72 @@ export default ({
 @import "../assets/scss/mixins";
 
 .article {
-    @include margin-bottom(1.25);
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
     &:last-child {
-        @include margin-bottom(.5);
+        border-bottom: none;
+        margin-bottom: 0;
     }
     &__title {
-        font-size: $typographic-base-font-size * 1.6875;
-        @include line-height(1.5);
-        @include margin-top(0);
-        @include margin-bottom(.5);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 20px 0 15px;
         &-link {
             color: $color-base;
+            text-decoration: none;
             &:hover,
             &:focus {
                 color: $color-base;
-                border-bottom: 1px solid $color-base;
+                text-decoration: none;
             }
         }
     }
     &__description {
-        font-size: $typographic-base-font-size;
-        @include line-height(1);
-        @include margin-bottom(.75);
+        font-size: 16px;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 15px;
     }
     &__meta {
+        margin-bottom: 10px;
+        font-size: 12px;
         &-time {
-            font-size: $typographic-small-font-size;
-            color: $color-base;
-            font-weight: 500;
+            font-size: 12px;
+            color: #999;
+            font-weight: 400;
             text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         &-divider {
-            margin: 0 5px;
+            margin: 0 8px;
+            color: #ddd;
         }
         &-category {
             &-link {
-                font-size: $typographic-small-font-size;
-                color: $color-secondary;
+                font-size: 12px;
+                color: #ff6b35;
                 font-weight: 500;
                 text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.5px;
                 &:hover,
                 &:focus {
-                    color: $color-primary;
+                    color: #e55a29;
                 }
             }
         }
     }
     &__readmore {
-        font-size: $typographic-base-font-size;
+        font-size: 14px;
         color: $color-primary;
+        text-decoration: none;
+        font-weight: 500;
         &:hover,
         &:focus {
-            color: $color-primary;
-            border-bottom: 1px solid $color-primary;
+            color: darken($color-primary, 10%);
+            text-decoration: none;
         }
     }
 }

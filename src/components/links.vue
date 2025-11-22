@@ -45,9 +45,9 @@
 </template>
 
 <script lang="ts">
-    export default ({
-        props: ['data']
-    })
+export default {
+    props: ['data']
+}
 </script>
 
 <style lang="scss">
@@ -55,32 +55,37 @@
 @import "../assets/scss/mixins";
 
 .links {
-    @include margin-bottom(1);
+    margin-bottom: 20px;
     &__list {
         display: flex;
+        justify-content: center;
         list-style: none;
         padding: 0;
-        margin: 10px -3px;
+        margin: 15px 0;
         &-item {
             padding: 0;
-            margin: 0 3px;
-            height: 24px;
-            width: 24px;
-            line-height: 24px;
-            border-radius: 3px;
+            margin: 0 8px;
+            height: 32px;
+            width: 32px;
+            line-height: 32px;
+            border-radius: 50%;
             text-align: center;
-            background: $color-gray-bg;
+            background: #ffffff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s;
             & a {
                 border: 0;
+                display: block;
                 & i {
-                    font-size: 14px;
-                    color: lighten($color-base, 20%);
+                    font-size: 16px;
+                    color: #666;
                 }
-                &:hover,
-                &:focus {
-                    & i {
-                        color: $color-base;
-                    }
+            }
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                & a i {
+                    color: #ff6b35;
                 }
             }
         }

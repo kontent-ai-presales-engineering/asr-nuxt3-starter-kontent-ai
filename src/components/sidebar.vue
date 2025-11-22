@@ -7,8 +7,8 @@
               <img
                 src="/radek.jpg"
                 class="sidebar__author-photo"
-                width="75"
-                height="75"
+                width="120"
+                height="120"
                 :alt="author.elements.name.value"
                 :data-kontent-element-codename="$projectModel.contentTypes.author.elements.avatar_image.codename"
               />
@@ -63,57 +63,61 @@ export default {
 
 .sidebar {
     width: 100%;
+    background: #f8f8f8;
+    min-height: 100vh;
     &__inner {
         position: relative;
-        padding: 25px 20px 0;
+        padding: 40px 30px;
+        text-align: center;
     }
     &__author {
+        margin-bottom: 30px;
         &-photo {
             display: inline-block;
-            margin-bottom: 0;
+            margin-bottom: 20px;
             border-radius: 50%;
             background-clip: padding-box;
+            width: 120px;
+            height: 120px;
+            border: 5px solid #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         &-title {
-            font-size: $typographic-base-font-size * 1.125;
-            font-weight: 500;
-            @include line-height(1.125);
+            font-size: 24px;
+            font-weight: 600;
+            @include line-height(1.2);
             @include margin(.5, 0, .5, 0);
             &-link {
                 color: $color-base;
+                text-decoration: none;
                 &:hover,
                 &:focus {
-                    color: $color-base;
+                    color: $color-primary;
                 }
             }
         }
         &-subtitle {
-            color: $color-gray;
-            @include line-height(1);
+            color: #888;
+            @include line-height(1.4);
             @include margin-bottom(1);
+            font-size: 14px;
         }
     }
     &__copyright {
-        color: lighten($color-gray, 18%);
-        font-size: $typographic-small-font-size;
+        color: #aaa;
+        font-size: 12px;
+        margin-top: 30px;
     }
 }
 
 @include breakpoint-sm {
     .sidebar {
-        width: 42%;
+        width: 320px;
+        flex-shrink: 0;
         &__inner {
-            padding: 30px 20px 0;
+            padding: 50px 30px;
             &:after {
-                background: $color-gray-border;
-                background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
-                position: absolute;
-                content: "";
-                width: 1px;
-                height: 540px;
-                top: 30px;
-                right: -10px;
-                bottom: 0;
+                display: none;
             }
         }
     }
@@ -121,9 +125,9 @@ export default {
 
 @include breakpoint-md {
     .sidebar {
-        width: 34%;
+        width: 360px;
         &__inner {
-            padding: 40px;
+            padding: 60px 40px;
         }
     }
 }
