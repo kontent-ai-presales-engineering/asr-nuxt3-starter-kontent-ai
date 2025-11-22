@@ -2,6 +2,11 @@ import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 import { DeliveryClient } from '@kentico/kontent-delivery'
 
 export default defineNuxtPlugin((nuxtApp) => {
+  // Prevent redefinition if already provided
+  if (nuxtApp.$kontent) {
+    return
+  }
+
   const config = useRuntimeConfig()
   const kontentConfig = config.public?.kontent || config.kontent
 
@@ -28,3 +33,4 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
   }
 })
+
