@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where kbm)",
+      "Bash(dir:*)",
+      "Bash(kbm:*)",
+      "Bash(tar:*)",
+      "Bash(powershell:*)",
+      "Bash(npm install:*)",
+      "Bash(node:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

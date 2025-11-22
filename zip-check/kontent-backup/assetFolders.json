@@ -1,0 +1,42 @@
+[
+  {
+    "id": "7d3d372f-b4d8-46f0-9fe1-0c05fc04ea36",
+    "name": "About Me",
+    "folders": []
+  },
+  {
+    "id": "6628f4a4-7a90-4fa1-819e-eae560d97a4b",
+    "name": "Contact",
+    "folders": []
+  },
+  {
+    "id": "01eb74f7-846a-4468-b611-b9b98c52ed1b",
+    "name": "Author",
+    "folders": []
+  },
+  {
+    "id": "81cf6c67-bd99-4545-ac17-3e8fe5e2a809",
+    "name": "Upgraded to Gatsby v2",
+    "folders": []
+  },
+  {
+    "id": "321fb5ec-c8d9-45fa-abac-9dcba4b33d1c",
+    "name": "Humane Typography",
+    "folders": []
+  },
+  {
+    "id": "8100a2df-ee7e-4821-bd89-4f560d0d06de",
+    "name": "The Origins of Social Stationery Lettering",
+    "folders": []
+  },
+  {
+    "id": "11f0aea9-91a9-4d98-8406-693cd1f0cedc",
+    "name": "A Brief History of Typography",
+    "folders": []
+  },
+  {
+    "id": "a9e8a370-2140-4c9f-af6b-38468cacc163",
+    "name": "Perfecting the Art of Perfection",
+    "folders": []
+  }
+]

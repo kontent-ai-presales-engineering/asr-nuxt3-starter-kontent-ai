@@ -1,0 +1,353 @@
+[
+  {
+    "id": "289142d1-a74f-4a8d-ba85-2feb5d838724",
+    "name": "Site Metadata",
+    "codename": "site_metadata",
+    "type": {
+      "id": "25c18404-5c71-4abd-85d0-0c3900bfff70"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-25T09:43:59.3297874Z"
+  },
+  {
+    "id": "1c1852ef-fe89-4120-89b0-fbf79754f9f1",
+    "name": "Navigation Menu",
+    "codename": "navigation_menu",
+    "type": {
+      "id": "09e9b2ba-822e-4c29-914b-970d8bc06333"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-25T10:59:28.8849721Z"
+  },
+  {
+    "id": "0055a4fe-d41d-4775-b4a4-8da34d1e3165",
+    "name": "Articles",
+    "codename": "articles",
+    "type": {
+      "id": "b7522b37-e6d4-4c18-93e0-4695af1bfe32"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-25T11:51:06.5911071Z"
+  },
+  {
+    "id": "2c468e25-2b08-446c-a514-48dc46359e30",
+    "name": "About Me",
+    "codename": "about_me",
+    "type": {
+      "id": "b7522b37-e6d4-4c18-93e0-4695af1bfe32"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-25T11:00:03.273194Z"
+  },
+  {
+    "id": "aa6a6ce4-f8b2-449a-a8ea-e8e2233b1a6d",
+    "name": "Contact",
+    "codename": "contact_me",
+    "type": {
+      "id": "b7522b37-e6d4-4c18-93e0-4695af1bfe32"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-08-31T11:56:37.4571772Z"
+  },
+  {
+    "id": "eedf0209-989c-4adb-bc83-546e325ab781",
+    "name": "Author",
+    "codename": "author",
+    "type": {
+      "id": "337a4509-0793-4dda-ba6a-a071ff7e65f1"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-25T11:56:33.3791583Z"
+  },
+  {
+    "id": "2ddb7214-5683-449a-9818-a96cce895ef5",
+    "name": "Perfecting the Art of Perfection",
+    "codename": "perfecting_the_art_of_perfection",
+    "type": {
+      "id": "e97ec6dc-1531-4b29-a84b-b17a85e79f05"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-26T19:27:52.0568397Z"
+  },
+  {
+    "id": "3e29b993-8840-48a1-956f-438e1ac9e102",
+    "name": "The Origins of Social Stationery Lettering",
+    "codename": "the_origins_of_social_stationery_lettering",
+    "type": {
+      "id": "e97ec6dc-1531-4b29-a84b-b17a85e79f05"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-26T19:28:13.504084Z"
+  },
+  {
+    "id": "337da352-0a24-4e03-b051-f0e119f53b2c",
+    "name": "A Brief History of Typography",
+    "codename": "untitled_content_item",
+    "type": {
+      "id": "e97ec6dc-1531-4b29-a84b-b17a85e79f05"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-26T19:28:52.2226835Z"
+  },
+  {
+    "id": "b82d4fe3-ec1e-44b4-a05d-37b33cb23a28",
+    "name": "Humane Typography in the Digital Age",
+    "codename": "humane_typography_in_the_digital_age",
+    "type": {
+      "id": "e97ec6dc-1531-4b29-a84b-b17a85e79f05"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-05-25T23:55:35.5205476Z"
+  },
+  {
+    "id": "5927f3d3-4fcb-4e2c-8d12-a2954339a87d",
+    "name": "Upgraded to Gatsby v3",
+    "codename": "upgraded_to_gatsby_v3",
+    "type": {
+      "id": "e97ec6dc-1531-4b29-a84b-b17a85e79f05"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2021-08-16T16:03:42.0850196Z"
+  },
+  {
+    "id": "e96de10c-6270-4ce1-809d-4ebaa114bee5",
+    "name": "About me",
+    "codename": "about_me_e96de10",
+    "type": {
+      "id": "fad23a6a-fdbc-4d0a-9254-cbf2379a575b"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-28T11:27:05.5081863Z"
+  },
+  {
+    "id": "84b9150f-bf5b-4291-bb02-376add6f7bd8",
+    "name": "Contact",
+    "codename": "contact",
+    "type": {
+      "id": "fad23a6a-fdbc-4d0a-9254-cbf2379a575b"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-28T23:13:25.7544029Z"
+  },
+  {
+    "id": "6fde255d-680b-4470-8ab4-1472afb658d8",
+    "name": "Typography",
+    "codename": "typography",
+    "type": {
+      "id": "efb4a184-1c32-4ede-bdd1-90fab6b7a7b9"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-10-06T09:26:28.0362Z"
+  },
+  {
+    "id": "08925c05-906a-49ee-be3a-6f3647b32cf0",
+    "name": "Open source",
+    "codename": "open_source",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-29T13:26:29.2810432Z"
+  },
+  {
+    "id": "3e51250a-6bb3-45a5-bde5-9371547050f2",
+    "name": "Gatsby",
+    "codename": "gatsby",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-02-29T13:26:44.5360104Z"
+  },
+  {
+    "id": "8ac23391-217b-4de3-a247-12bfd3c4955c",
+    "name": "Typography",
+    "codename": "typography_8ac2339",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-10-06T09:26:47.6827514Z"
+  },
+  {
+    "id": "7ab02f21-82bf-496b-9dc1-c89bb49d6155",
+    "name": "Design",
+    "codename": "design",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-10-06T09:27:06.3560947Z"
+  },
+  {
+    "id": "754b163a-9435-475c-b44a-83b9a0a80e78",
+    "name": "Web Development",
+    "codename": "web_development",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-03T15:35:57.6779472Z"
+  },
+  {
+    "id": "92b8911b-4645-4987-85d6-fea6f52867ef",
+    "name": "Gatsby",
+    "codename": "gatsby_92b8911",
+    "type": {
+      "id": "efb4a184-1c32-4ede-bdd1-90fab6b7a7b9"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-04T14:25:48.9970875Z"
+  },
+  {
+    "id": "e117a7d3-b1fa-4a27-99e3-4a457b51ac65",
+    "name": "Design Inspiration",
+    "codename": "design_inspiration",
+    "type": {
+      "id": "efb4a184-1c32-4ede-bdd1-90fab6b7a7b9"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:26:26.3190222Z"
+  },
+  {
+    "id": "3fd30cd9-476c-46b7-80b4-c53bb68e095a",
+    "name": "Handwriting",
+    "codename": "handwriting",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:26:59.1323755Z"
+  },
+  {
+    "id": "c61aac16-c928-4a6c-b52e-50540be25bb5",
+    "name": "Learning to write",
+    "codename": "learning_to_write",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:27:16.6878613Z"
+  },
+  {
+    "id": "a5493747-1e32-4c58-820c-65819e230c94",
+    "name": "Typefaces",
+    "codename": "typefaces",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:35:08.6739233Z"
+  },
+  {
+    "id": "56537a40-9a47-4139-9c4a-a7a014b37a77",
+    "name": "Lettering",
+    "codename": "lettering",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:35:21.9552201Z"
+  },
+  {
+    "id": "bd94c620-15e4-48a9-aaa6-365552672685",
+    "name": "History",
+    "codename": "history",
+    "type": {
+      "id": "92353f19-a4a1-45f0-8523-f7d71ee994d5"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-03-14T14:35:38.4083262Z"
+  },
+  {
+    "id": "5ee57362-fd94-4885-ad58-a1875b9d227c",
+    "name": "Homepage",
+    "codename": "homepage",
+    "type": {
+      "id": "01a544c5-0b8d-4d3d-b9d9-79a6061be9b8"
+    },
+    "collection": {
+      "id": "00000000-0000-0000-0000-000000000000"
+    },
+    "sitemap_locations": [],
+    "last_modified": "2020-08-20T10:32:24.2749183Z"
+  }
+]
