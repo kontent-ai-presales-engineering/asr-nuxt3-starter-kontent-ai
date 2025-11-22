@@ -3,6 +3,9 @@ export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt',
     ],
+    nitro: {
+        preset: process.env.NITRO_PRESET || 'static',
+    },
     runtimeConfig: {
         public: {
             kontent: {
