@@ -143,7 +143,9 @@ Netlify can run in any frontend web environment, but the quickest way to try it 
 
 After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
-Note: The build base directory should be set to `src` and publish directory should be `src/dist`.
+Note: The build base directory should be set to `src` and publish directory should be `.output/public` (relative to the base directory).
+
+Alternatively, you can use the included `netlify.toml` file which has these settings pre-configured.
 
 ## Implementing Web spotlight
 
