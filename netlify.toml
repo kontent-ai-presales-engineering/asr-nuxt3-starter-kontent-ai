@@ -1,8 +1,8 @@
 [build]
   base = "src"
-  command = "npm install && npm run generate"
+  command = "npm install --include=optional && npm run generate"
   publish = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
