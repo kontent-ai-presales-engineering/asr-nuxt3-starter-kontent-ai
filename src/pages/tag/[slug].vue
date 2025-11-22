@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <Sidebar :isHomePage="false" />
     <div class="content">
       <div class="content__inner">
@@ -7,7 +7,7 @@
             <h1 class="page__title">
               All Articles tagged as &quot;{{tag.elements.title.value}}&quot;
             </h1>
-            <div className="page__body">
+            <div class="page__body">
               <Article v-for="article in articles" v-bind:key="article.system.id" :data="article" />
             </div>
           </div>

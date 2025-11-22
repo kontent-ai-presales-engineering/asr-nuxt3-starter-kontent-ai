@@ -141,13 +141,24 @@ figcaption {
     text-align: center;
 }
 
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .content {
+    flex: 1;
     &__inner {
         padding: 25px 20px;
     }
 }
 
 @include breakpoint-sm {
+    .page-wrapper {
+        flex-direction: row;
+    }
+    
     figure.float-left,
     figure.float-right {
         max-width: 310px;
@@ -160,7 +171,7 @@ figcaption {
         float: left;
     }
     .content {
-        width: 58%;
+        flex: 1;
         &__inner {
             padding: 30px 20px;
         }
@@ -169,7 +180,6 @@ figcaption {
 
 @include breakpoint-md {
     .content {
-        width: 66%;
         &__inner {
             padding: 40px 35px;
         }

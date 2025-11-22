@@ -65,10 +65,16 @@ export default {
     width: 100%;
     background: #f8f8f8;
     min-height: 100vh;
+    flex-shrink: 0;
     &__inner {
         position: relative;
         padding: 40px 30px;
         text-align: center;
+    }
+    
+    // Fixed width for larger screens
+    @media (min-width: 685px) {
+        width: 320px;
     }
     &__author {
         margin-bottom: 30px;
@@ -113,7 +119,6 @@ export default {
 @include breakpoint-sm {
     .sidebar {
         width: 320px;
-        flex-shrink: 0;
         &__inner {
             padding: 50px 30px;
             &:after {

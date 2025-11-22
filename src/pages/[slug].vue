@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-wrapper">
     <Head>
         <Title>{{menuItem.elements.label.value}} | Kontent + Nuxt 3</Title>
     </Head>
