@@ -16,7 +16,7 @@ Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 + Nuxt 3 as a static site generator
 + TypeScript
 + Content from [Kontent](http://kontent.ai/) headless CMS.
-+ [Kontent Delivery JS SDK (^11.0.0)](https://github.com/Kentico/kontent-delivery-sdk-js/tree/vnext) via [Kontent Nuxt3 module](https://github.com/ondrabus/kontent-nuxt3-module)
++ [Kontent Delivery JS SDK (^11.0.0)](https://github.com/Kentico/kontent-delivery-sdk-js/tree/vnext) via [Kontent Nuxt3 module](https://github.com/kontent-ai-presales-engineering/asr-nuxt3-starter-kontent-ai?tab=readme-ov-file)
 + [Kontent Model generator (^4.0.0)](https://github.com/Kentico/kontent-model-generator-js) to automatically generate content types into strongly typed models.
 + Uses [Pinia](https://pinia.esm.dev/) as a data store.
 + [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
@@ -88,7 +88,7 @@ This implementation uses [the new JS Delivery SDK for Kontent](https://github.co
 const kontent = useNuxtApp().$kontent
 ```
 
-See the configuration details on the [Kontent Nuxt3 module page](https://github.com/ondrabus/kontent-nuxt3-module).
+See the configuration details on the [Kontent Nuxt3 module page](https://github.com/kontent-ai-presales-engineering/asr-nuxt3-starter-kontent-ai?tab=readme-ov-file).
 
 ### Preview Deploy
 
