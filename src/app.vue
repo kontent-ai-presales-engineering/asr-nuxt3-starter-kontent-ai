@@ -7,7 +7,7 @@
       })
     },
     metaInfo: {
-      title: "Nuxt 3 + Kontent by Kentico",
+      title: "Nuxt 3 + Kontent.ai",
       titleTemplate: "&s | Kontent"
     },
   }

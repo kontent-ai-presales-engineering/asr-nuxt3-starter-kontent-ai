@@ -1,7 +1,7 @@
-# Nuxt 3 + Kontent by Kentico starter
+# Nuxt 3 + Kontent.ai starter
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ondrabus/nuxt3-starter-kontent-lumen/main/LICENSE)
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-kontent)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kontent-ai)
 [![Live demo](https://img.shields.io/badge/Live-Demo-00C7B7.svg?logo=netlify)](https://nuxt3-starter-kontent-lumen.netlify.com/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2adc83d6-9eba-45fc-b95c-c205e75d3189/deploy-status)](https://app.netlify.com/sites/nuxt3-starter-kontent-lumen/deploys)
@@ -14,8 +14,8 @@ Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 + Nuxt 3.20+ as a static site generator
 + TypeScript
 + Content from [Kontent.ai](http://kontent.ai/) headless CMS.
-+ [Kontent Delivery JS SDK (^11.13.0)](https://github.com/Kentico/kontent-delivery-sdk-js) via custom Nuxt plugin
-+ [Kontent Model generator (5.0.0)](https://github.com/Kentico/kontent-model-generator-js) to automatically generate content types into strongly typed models.
++ [Kontent Delivery JS SDK (^11.13.0)](https://github.com/kontent-ai/delivery-sdk-js) via custom Nuxt plugin
++ [Kontent Model generator (5.0.0)](https://github.com/kontent-ai/model-generator-jss) to automatically generate content types into strongly typed models.
 + Uses [Pinia (^2.2.6)](https://pinia.vuejs.org/) as a data store.
 + [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
 + Stylesheet built using SASS and [BEM](http://getbem.com/naming/)-Style naming.
@@ -37,17 +37,15 @@ Lumen is a minimal, lightweight and mobile-first starter for creating blogs.
 1. Go to [app.kontent.ai](https://app.kontent.ai) and [create empty project](https://docs.kontent.ai/tutorials/set-up-kontent/projects/manage-projects#a-creating-projects)
 1. Go to "Project Settings", select API keys and copy
     + Project ID
-1. Install [Kontent Backup Manager](https://github.com/Kentico/kontent-backup-manager-js) and import data to newly created project from [`kontent-backup.zip`](./kontent-backup.zip) file (place appropriate values for `apiKey` and `projectId` arguments):
+1. Install [Kontent Backup Manager](https://github.com/kontent-ai-bot/backup-manager-js) and import data to newly created project from [`kontent-backup.zip`](./kontent-backup.zip) file (place appropriate values for `apiKey` and `projectId` arguments):
 
     ```sh
-    npm i -g @kentico/kontent-backup-manager
+    npm i -g @kontent-ai/kontent-backup-manager
 
     kbm --action=restore --apiKey=<Management API key> --projectId=<Project ID> --zipFilename=kontent-backup
     ```
 
-    > Alternatively, you can use the [Template Manager UI](https://kentico.github.io/kontent-template-manager/import-from-file) for importing the content.
-
-1. Go to your Kontent project and [publish all the imported items](https://docs.kontent.ai/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
+1. Go to your Kontent.ai project and [publish all the imported items](https://kontent.ai/learn/docs/workflows-publishing/publish).
 
 ### Join codebase and content data
 
