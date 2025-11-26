@@ -4,8 +4,8 @@ import { defineConfig } from "vite";
 export default defineConfig({
   resolve: {
     alias: {
-      "@kentico/kontent-core": "@kentico/kontent-core/dist/cjs",
-      "@kentico/kontent-delivery": "@kentico/kontent-delivery/dist/cjs"
+      "@kontent-ai/kontent-core": "@kontent-ai/kontent-core/dist/cjs",
+      "@kontent-ai/kontent-delivery": "@kontent-ai/kontent-delivery/dist/cjs"
     }
   }
 })

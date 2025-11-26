@@ -85,7 +85,7 @@ npm run generate
 
 ## Using Kontent plugin in Nuxt 3
 
-This implementation uses the [Kontent Delivery JS SDK](https://github.com/Kentico/kontent-delivery-sdk-js). The deliveryClient is registered via a custom Nuxt 3 plugin ([src/plugins/kontent.ts](src/plugins/kontent.ts)) and is accessible to all pages and components via app context:
+This implementation uses the [Kontent Delivery JS SDK](https://github.com/kontent-ai/delivery-sdk-js). The deliveryClient is registered via a custom Nuxt 3 plugin ([src/plugins/kontent.ts](src/plugins/kontent.ts)) and is accessible to all pages and components via app context:
 
 ```js
 const kontent = useNuxtApp().$kontent

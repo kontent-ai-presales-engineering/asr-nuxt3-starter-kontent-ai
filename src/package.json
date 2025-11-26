@@ -8,8 +8,8 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "@kentico/kontent-delivery": "^11.13.0",
-    "@kentico/kontent-model-generator": "5.0.0-3",
+    "@kontent-ai/delivery-sdk": "^16.4.0",
+    "@kontent-ai/model-generator": "^7.2.0",
     "@types/luxon": "^3.4.2",
     "nuxt": "^3.14.159",
     "sass": "^1.80.7",

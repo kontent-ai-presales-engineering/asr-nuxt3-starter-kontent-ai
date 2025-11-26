@@ -29,7 +29,10 @@
       "Bash(taskkill:*)",
       "Bash(if exist .nuxt rmdir /s /q .nuxt)",
       "Bash(if exist node_modules.cache rmdir /s /q node_modules.cache)",
-      "Bash(ping:*)"
+      "Bash(ping:*)",
+      "Bash(npm --version)",
+      "Bash(if exist .output rmdir /s /q .output)",
+      "Bash(if exist node_modules/.cache rmdir /s /q node_modules/.cache)"
     ],
     "deny": [],
     "ask": []

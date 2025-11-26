@@ -1,5 +1,5 @@
 import { defineNuxtPlugin, useRuntimeConfig } from '#app'
-import { DeliveryClient } from '@kentico/kontent-delivery'
+import { createDeliveryClient } from '@kontent-ai/delivery-sdk'
 
 export default defineNuxtPlugin((nuxtApp) => {
   // Prevent redefinition if already provided
@@ -19,8 +19,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
   }
 
-  const deliveryClient = new DeliveryClient({
-    projectId: kontentConfig.environmentId,
+  const deliveryClient = createDeliveryClient({
+    environmentId: kontentConfig.environmentId,
     previewApiKey: kontentConfig.previewApiKey,
     defaultQueryConfig: {
       usePreviewMode: !!kontentConfig.previewApiKey,
@@ -33,4 +33,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     }
   }
 })
+
+
+
+
 

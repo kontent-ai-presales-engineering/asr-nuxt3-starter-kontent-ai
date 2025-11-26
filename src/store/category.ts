@@ -1,5 +1,5 @@
 
-import { DeliveryClient } from "@kentico/kontent-delivery";
+import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 import { defineStore } from "pinia";
 import { Category } from "~~/models/category";
 import { projectModel } from "~~/models/_project";
@@ -15,7 +15,7 @@ export const useCategory = defineStore('category', {
         dataLoaded: false
     }),
     actions: {
-        async getData(kontent: DeliveryClient) {
+        async getData(kontent: IDeliveryClient) {
             if (!this.dataLoaded){
                 this.categories = (await kontent
                     .items<Category>()
@@ -24,7 +24,7 @@ export const useCategory = defineStore('category', {
                 this.dataLoaded = true
             }
         },
-        async getBySlug(slug: string, kontent: DeliveryClient): Promise<Category> {
+        async getBySlug(slug: string, kontent: IDeliveryClient): Promise<Category> {
             await this.getData(kontent);
             return this.categories.find(c => c.elements.slug.value == slug) as Category;
         }

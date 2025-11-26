@@ -1,4 +1,4 @@
-import { DeliveryClient } from "@kentico/kontent-delivery";
+import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 import { defineStore } from "pinia";
 import { Tag } from "~~/models/tag";
 import { projectModel } from "~~/models/_project";
@@ -14,7 +14,7 @@ export const useTag = defineStore('tag', {
         dataLoaded: false
     }),
     actions: {
-        async getData(kontent: DeliveryClient) {
+        async getData(kontent: IDeliveryClient) {
             if (!this.dataLoaded){
                 this.tags = (await kontent
                     .items<Tag>()
@@ -23,7 +23,7 @@ export const useTag = defineStore('tag', {
                 this.dataLoaded = true
             }
         },
-        async getBySlug(slug: string, kontent: DeliveryClient) {
+        async getBySlug(slug: string, kontent: IDeliveryClient) {
             await this.getData(kontent);
             return this.tags.find(c => c.elements.slug.value == slug) as Tag;
         }

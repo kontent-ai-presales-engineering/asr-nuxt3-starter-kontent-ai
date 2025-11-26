@@ -1,7 +1,6 @@
 <template>
     <div class="page-wrapper">
         <Head>
-            <Title>Kontent by Kentico + Nuxt 3 sample site</Title>
         </Head>
 
         <Sidebar :isHomePage="true"/>

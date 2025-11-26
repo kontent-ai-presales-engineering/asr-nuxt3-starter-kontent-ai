@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 import { Author } from "~~/models/author";
 import { projectModel } from "~~/models/_project";
 import { SiteMetadata } from "~~/models/site_metadata";
-import { DeliveryClient } from "@kentico/kontent-delivery";
+import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 
 interface MetadataState {
     author: Author,
@@ -18,7 +18,7 @@ export const useMetadata = defineStore('metadata', {
         dataLoaded: false
     }),
     actions: {
-        async getData(kontent: DeliveryClient) {
+        async getData(kontent: IDeliveryClient) {
             if (!this.dataLoaded){
 
                 this.author = (await kontent

@@ -3,7 +3,7 @@ import { defineStore } from "pinia";
 import { MenuItem } from "~~/models/menu_item";
 import { Menu } from "~~/models/menu";
 import { projectModel } from "~~/models/_project";
-import { DeliveryClient } from "@kentico/kontent-delivery";
+import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 
 interface MenuState {
     menuItems: MenuItem[],
@@ -16,7 +16,7 @@ export const useMenu = defineStore('menu', {
         dataLoaded: false
     }),
     actions: {
-        async getData(kontent: DeliveryClient) {
+        async getData(kontent: IDeliveryClient) {
             if (!this.dataLoaded){
                 this.menuItems = (await kontent
                     .items<Menu>()
@@ -27,7 +27,7 @@ export const useMenu = defineStore('menu', {
                 this.dataLoaded = true
             }
         },
-        async getBySlug(slug: string, kontent: DeliveryClient): Promise<MenuItem>{
+        async getBySlug(slug: string, kontent: IDeliveryClient): Promise<MenuItem>{
             await this.getData(kontent)
             return this.menuItems.find(i => i.elements.slug.value == slug) as MenuItem
         }
