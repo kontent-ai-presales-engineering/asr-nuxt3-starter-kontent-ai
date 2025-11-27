@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     ],
     nitro: {
         preset: process.env.NITRO_PRESET || 'static',
+        alias: {
+            '~~': '.',
+        },
     },
     runtimeConfig: {
         public: {

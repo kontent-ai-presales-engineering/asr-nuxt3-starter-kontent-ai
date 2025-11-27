@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from '#app'
-import { projectModel } from '../models/_project.js'
+import { projectModel } from '~/models'
 
 export default defineNuxtPlugin((nuxtApp) => {
 
