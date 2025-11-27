@@ -1,7 +1,7 @@
 
 import { defineStore } from "pinia";
-import { MenuItem } from "~~/models/menu_item";
-import { Menu } from "~~/models/menu";
+import type { MenuItemType as MenuItem } from "~~/models/types/menu-item-type.generated";
+import type { MenuType as Menu } from "~~/models/types/menu-type.generated";
 import { projectModel } from "~~/models/_project";
 import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 

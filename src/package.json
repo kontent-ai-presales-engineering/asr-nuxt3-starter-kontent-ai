@@ -4,7 +4,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
-    "generate-models": "cd models && kontent-generate --projectId=f1d4240e-dfa7-014f-eab5-a29010d85aeb",
+    "generate-models": "kontent-generate delivery-sdk --environmentId=cf6d175e-7a5d-0112-9460-c4bba590ad75  --outputDir=./models --moduleFileExtension=ts --managementApiKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxN2RjMDM1OGMzNDA0ZmRjOGNiY2I0MDFiZDI4NmQ3YSIsImlhdCI6MTc2Mzc2ODQ1OSwibmJmIjoxNzYzNzY4NDU5LCJleHAiOjE3Nzk0MDMyMDAsInZlciI6IjMuMC4wIiwidWlkIjoidmlydHVhbF80YWIwYjVjMS1mZGI1LTRmYjQtYWMxYi1jODFmODNlOTg5ZjQiLCJzY29wZV9pZCI6ImQzMGVkNDU1MGIzODQ1YTFiOWRjNWY5Yzg3NTM3OGM1IiwicHJvamVjdF9jb250YWluZXJfaWQiOiI2NWVmMjY3MGE0NmUwMWYxNDYzMTUzZThkMDE0YjAzNCIsImF1ZCI6Im1hbmFnZS5rZW50aWNvY2xvdWQuY29tIn0.XSW2zkhFE1t-3cPKDOEqemNyAs3z56P00w31Xvu7wRk",
     "generate": "nuxt generate"
   },
   "devDependencies": {

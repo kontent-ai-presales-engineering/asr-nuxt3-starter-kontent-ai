@@ -1,8 +1,8 @@
 
 import { defineStore } from "pinia";
-import { Author } from "~~/models/author";
+import type { AuthorType as Author } from "~~/models/types/author-type.generated";
 import { projectModel } from "~~/models/_project";
-import { SiteMetadata } from "~~/models/site_metadata";
+import type { SiteMetadataType as SiteMetadata } from "~~/models/types/site-metadata-type.generated";
 import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 
 interface MetadataState {

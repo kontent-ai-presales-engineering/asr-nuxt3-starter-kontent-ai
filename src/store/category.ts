@@ -1,7 +1,7 @@
 
 import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 import { defineStore } from "pinia";
-import { Category } from "~~/models/category";
+import type { CategoryType as Category } from "~~/models/types/category-type.generated";
 import { projectModel } from "~~/models/_project";
 
 interface CategoryState {

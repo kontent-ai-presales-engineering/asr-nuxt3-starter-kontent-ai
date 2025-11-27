@@ -1,6 +1,6 @@
 import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 import { defineStore } from "pinia";
-import { Tag } from "~~/models/tag";
+import type { TagType as Tag } from "~~/models/types/tag-type.generated";
 import { projectModel } from "~~/models/_project";
 
 interface TagState {

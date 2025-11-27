@@ -1,6 +1,6 @@
 
 import { defineStore } from "pinia";
-import { Article } from "~~/models/article";
+import type { ArticleType as Article } from "~~/models/types/article-type.generated";
 import { projectModel } from "~~/models/_project";
 import { IDeliveryClient } from "@kontent-ai/delivery-sdk";
 
