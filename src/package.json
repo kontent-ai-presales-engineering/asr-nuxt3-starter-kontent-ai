@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@kontent-ai/delivery-sdk": "^16.4.0",
-    "@kontent-ai/model-generator": "^7.2.0",
+    "@kontent-ai/model-generator": "^9.1.1",
     "@types/luxon": "^3.4.2",
     "nuxt": "^3.14.159",
     "sass": "^1.80.7",
